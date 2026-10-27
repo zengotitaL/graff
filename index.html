@@ -357,7 +357,7 @@ function applyPlaybackSpeed(){
 snailBtn.addEventListener("click", e => {
     e.stopPropagation();
     if(!started) return;
-    playbackSpeed = playbackSpeed === 1 ? 0.5 : 1;
+    playbackSpeed = playbackSpeed === 1 ? 0.75 : 1;
     applyPlaybackSpeed();
     snailBtn.setAttribute("aria-pressed", String(playbackSpeed === 0.5));
     snailBtn.setAttribute("aria-label", playbackSpeed === 0.5
